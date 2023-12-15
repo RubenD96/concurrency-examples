@@ -12,3 +12,5 @@ AtomicSync: 20000
 SynchronizedSync: 20000
 
 BadVolatileSync: 15706
+
+LockSync: 20000

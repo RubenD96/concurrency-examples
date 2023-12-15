@@ -3,6 +3,7 @@ package main;
 import main.bad.BadVolatileSync;
 import main.bad.NoSync;
 import main.good.AtomicSync;
+import main.good.LockSync;
 import main.good.SynchronizedSync;
 
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ public class Main {
         // Good:
         processes.add(new SynchronizedSync());
         processes.add(new AtomicSync());
+        processes.add(new LockSync());
 
         processes.forEach(process -> {
             process.startCounter();
